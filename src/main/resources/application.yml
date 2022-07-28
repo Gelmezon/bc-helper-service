@@ -1,0 +1,19 @@
+server:
+  port: 7272
+  ssl:
+    key-store: tomcat.keystore
+    key-store-type: JKS
+    key-alias: tomcat
+    enabled: true
+    key-store-password: 123456
+spring:
+  data:
+    mongodb:
+      uri: mongodb://127.0.0.1:27017/bondageclub
+#app 全局唯一id生成
+app:
+  idGenerator:
+    workerId: 1
+    datacenterId: 0
+
+
